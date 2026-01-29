@@ -1,0 +1,27 @@
+FROM python:3.11-slim
+
+RUN apt-get update && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+        libasound2 libstdc++6 ca-certificates && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+COPY requirements.txt dev-requirements.txt ./
+RUN pip install --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt -r dev-requirements.txt
+
+COPY . .
+
+# Set Python path and test environment variables
+ENV PYTHONPATH=/app/src
+ENV API_KEY=test-api-key
+ENV ADMIN_SECRET=test-admin-secret
+ENV DATABASE_URL=sqlite:///:memory:
+ENV AZURE_OPENAI_KEY=test-key
+ENV AZURE_OPENAI_ENDPOINT=https://test.openai.azure.com/
+ENV AZURE_SPEECH_KEY=test-key
+ENV AZURE_SPEECH_REGION=westeurope
+ENV PROMTE_API_KEY=test-key
+
+CMD ["pytest", "tests", "-v", "--cov=src", "--cov-report=term-missing"]

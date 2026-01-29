@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure consistent background color across the entire page */
+body {
+  @apply bg-white dark:bg-gray-900;
+}
+
+.loader {
+    border-top-color: #bc4d30;
+    animation: spinner 0.6s linear infinite;
+  }
+  
+  @keyframes spinner {
+    to { transform: rotate(360deg); }
+  }
+  

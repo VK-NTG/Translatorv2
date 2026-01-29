@@ -1,0 +1,66 @@
+# KK-AI-Translator - Local Development with Local MySQL
+# Usage: docker compose -f docker-compose.local.yml up --build
+#
+# This uses a local MySQL database instead of Azure
+
+services:
+  # Local MySQL database
+  db:
+    image: mysql:8.0
+    container_name: translator-mysql-local
+    environment:
+      - MYSQL_ROOT_PASSWORD=devpassword
+      - MYSQL_DATABASE=translator
+      - MYSQL_USER=translator
+      - MYSQL_PASSWORD=translatorpass
+    volumes:
+      - mysql_local_data:/var/lib/mysql
+    ports:
+      - "3307:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  translator:
+    build:
+      context: .
+      dockerfile: Dockerfile.local
+      args:
+        BUILD_TIMESTAMP: local
+        VITE_API_URL: /api/v1
+        VITE_API_KEY: kk-local-api-key
+    ports:
+      - "8080:80"
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file:
+      - .env
+    environment:
+      # Override database to use local MySQL
+      - DATABASE_URL=mysql+pymysql://translator:translatorpass@db:3306/translator
+      - MYSQL_USER=translator
+      - MYSQL_PASSWORD=translatorpass
+      - MYSQL_HOST=db
+      - MYSQL_PORT=3306
+      - MYSQL_DB=translator
+      # Override API security for local dev
+      - API_KEY=kk-local-api-key
+      - ADMIN_SECRET=dev-admin-secret
+      # Flask
+      - FLASK_APP=src/app.py
+      - FLASK_ENV=development
+      - PYTHONPATH=/app/src
+    healthcheck:
+      test: ["CMD", "curl", "-f", "-H", "x-api-key: kk-local-api-key", "http://localhost:80/api/v1/misc/ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    restart: unless-stopped
+
+volumes:
+  mysql_local_data:

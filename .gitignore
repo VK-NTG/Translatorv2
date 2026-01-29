@@ -1,0 +1,108 @@
+# Environment files (keep .env.example)
+.env
+.env.local
+.env.production
+.env.development
+/venv
+__pycache__/venv
+src/__pycache__/
+src/routes/__pycache__/
+*.py[cod]
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Environment variables
+.env
+
+# Test coverage
+.coverage
+coverage.xml
+htmlcov/
+
+# pytest
+.cache/
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# pyright
+typings/
+
+# Logs and local db
+*.log
+*.sqlite3
+
+# Jupyter
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Mac OS
+.DS_Store
+
+# Docker
+*.pid
+*.tar
+
+
+deploy-models-azure-docker.txt
+
+docker-models/models/TinyLlama-TinyLlama-1.1B-Chat
+
+docker-models/.env
+docker-models/.env-real
+docker-models/chatgpt-example.txt
+docker-models/delpoy image example .txt
+docker-models/det-her-virkede.txt
+
+
+docker-models
+
+huskeliste.txt
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+translator-app-react/node_modules
+translator-app-react/dist
+translator-app-react/dist-ssr
+
+
+.env.docker

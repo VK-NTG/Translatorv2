@@ -1,0 +1,83 @@
+# KK-AI-Translator - Local Development Docker Compose
+# Usage: docker compose up --build
+#
+# This configuration includes a local MySQL database for development.
+# For production, set MYSQL_HOST to your Azure MySQL server in .env
+
+services:
+  # Local MySQL database for development
+  db:
+    image: mysql:8.0
+    container_name: translator-mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=devpassword
+      - MYSQL_DATABASE=translator
+      - MYSQL_USER=translator
+      - MYSQL_PASSWORD=translatorpass
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3307:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  translator:
+    build:
+      context: .
+      dockerfile: Dockerfile.local
+      args:
+        BUILD_TIMESTAMP: ${BUILD_TIMESTAMP:-local}
+        VITE_API_URL: /api/v1
+        VITE_API_KEY: ${API_KEY:-kk-super-secret-api-key}
+    ports:
+      - "8080:80"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      # API Security
+      - API_KEY=${API_KEY:-kk-super-secret-api-key}
+      - ADMIN_SECRET=${ADMIN_SECRET:-dev-admin-secret}
+
+      # Azure Speech Services
+      - MODEL_AZURE_SPEECH_URL=${MODEL_AZURE_SPEECH_URL}
+      - AZURE_SPEECH_KEY=${AZURE_SPEECH_KEY}
+      - AZURE_SPEECH_REGION=${AZURE_SPEECH_REGION}
+      - MODEL_AZURE_SPEECH_BILLING_URL=${MODEL_AZURE_SPEECH_BILLING_URL}
+
+      # Azure OpenAI
+      - MODEL_AZURE_GPT4OMINI_URL=${MODEL_AZURE_GPT4OMINI_URL}
+      - MODEL_AZURE_GPT35TURBO_URL=${MODEL_AZURE_GPT35TURBO_URL}
+      - AZURE_OPENAI_KEY=${AZURE_OPENAI_KEY}
+
+      # External APIs (Promte)
+      - PROMTE_WHISPER=${PROMTE_WHISPER}
+      - PROMTE_4O=${PROMTE_4O}
+      - PROMTE_API_KEY=${PROMTE_API_KEY}
+
+      # Database - Use local MySQL by default, override in .env for Azure
+      - DATABASE_URL=${DATABASE_URL:-mysql+pymysql://translator:translatorpass@db:3306/translator}
+      - MYSQL_USER=${MYSQL_USER:-translator}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD:-translatorpass}
+      - MYSQL_HOST=${MYSQL_HOST:-db}
+      - MYSQL_PORT=${MYSQL_PORT:-3306}
+      - MYSQL_DB=${MYSQL_DB:-translator}
+
+      # Flask
+      - FLASK_APP=src/app.py
+      - FLASK_ENV=development
+      - PYTHONPATH=/app/src
+    healthcheck:
+      test: ["CMD", "curl", "-f", "-H", "x-api-key: ${API_KEY:-kk-super-secret-api-key}", "http://localhost:80/api/v1/misc/ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    restart: unless-stopped
+
+volumes:
+  mysql_data:
