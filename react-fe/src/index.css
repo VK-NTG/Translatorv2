@@ -8,7 +8,7 @@ body {
 }
 
 .loader {
-    border-top-color: #bc4d30;
+    border-top-color: #004139;
     animation: spinner 0.6s linear infinite;
   }
   
