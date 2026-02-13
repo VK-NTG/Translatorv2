@@ -458,7 +458,7 @@ const SessionView: React.FC<SessionViewProps> = ({
               style={{ height: 80 }}
             >
               <div className="w-[110px] sm:w-[140px] md:w-[90px] lg:w-[160px] text-left">
-                <img src={logo} alt="Kalundborg Kommune logo" width={160} />
+                <img src={logo} alt="Vejle Kommune logo" width={160} />
               </div>
               <div>
                 <span className="text-white">
@@ -674,7 +674,7 @@ const SessionView: React.FC<SessionViewProps> = ({
           <>
             {/* Top Header Bar with Logo and Theme Toggle */}
             <div className="flex items-center justify-between px-4 py-3 bg-[#bc4d30] dark:bg-gray-800 shrink-0">
-              <img src={logo} alt="Kalundborg Kommune" className="h-8" />
+              <img src={logo} alt="Vejle Kommune" className="h-8" />
               <button
                 onClick={() => {
                   const html = document.documentElement
