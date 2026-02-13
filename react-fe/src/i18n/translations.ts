@@ -51,7 +51,7 @@ export const translations: Record<string, Translation> = {
     stopRecording: 'Stop optagelse',
 
     // Info Modal
-    welcomeTitle: 'Velkommen til Kalundborg Kommunes Tolkeløsning',
+    welcomeTitle: 'Velkommen til Vejle Kommunes Tolkeløsning',
     welcomeMessage: 'Denne løsning hjælper dig med at kommunikere på dansk og dit valgte sprog.',
     howItWorks: 'Sådan virker det:',
     step1: '1. Skriv eller tal din besked',
@@ -85,7 +85,7 @@ export const translations: Record<string, Translation> = {
     stopRecording: 'Stop recording',
 
     // Info Modal
-    welcomeTitle: 'Welcome to Kalundborg Municipality\'s Interpreter Solution',
+    welcomeTitle: 'Welcome to Vejle Municipality\'s Interpreter Solution',
     welcomeMessage: 'This solution helps you communicate in Danish and your chosen language.',
     howItWorks: 'How it works:',
     step1: '1. Write or speak your message',
@@ -187,7 +187,7 @@ export const translations: Record<string, Translation> = {
     stopRecording: 'Jooji duubitaanka',
 
     // Info Modal
-    welcomeTitle: 'Ku soo dhawoow xalka turjumaadda ee Degmada Kalundborg',
+    welcomeTitle: 'Ku soo dhawoow xalka turjumaadda ee Degmada Vejle',
     welcomeMessage: 'Xalkan wuxuu kaa caawiyaa inaad kala hadashid Danish-ka iyo luqaddaada la doortay.',
     howItWorks: 'Sida uu u shaqeeyo:',
     step1: '1. Qor ama ku hadal fariintaada',
@@ -221,7 +221,7 @@ export const translations: Record<string, Translation> = {
     stopRecording: 'Aufnahme stoppen',
 
     // Info Modal
-    welcomeTitle: 'Willkommen zur Dolmetscherlösung der Gemeinde Kalundborg',
+    welcomeTitle: 'Willkommen zur Dolmetscherlösung der Gemeinde Vejle',
     welcomeMessage: 'Diese Lösung hilft Ihnen, auf Dänisch und in Ihrer gewählten Sprache zu kommunizieren.',
     howItWorks: 'So funktioniert es:',
     step1: '1. Schreiben oder sprechen Sie Ihre Nachricht',
@@ -255,7 +255,7 @@ export const translations: Record<string, Translation> = {
     stopRecording: 'Arrêter l\'enregistrement',
 
     // Info Modal
-    welcomeTitle: 'Bienvenue à la Solution d\'Interprétation de la Commune de Kalundborg',
+    welcomeTitle: 'Bienvenue à la Solution d\'Interprétation de la Commune de Vejle',
     welcomeMessage: 'Cette solution vous aide à communiquer en danois et dans votre langue choisie.',
     howItWorks: 'Voici comment cela fonctionne:',
     step1: '1. Écrivez ou parlez votre message',
@@ -289,7 +289,7 @@ export const translations: Record<string, Translation> = {
     stopRecording: 'Detener grabación',
 
     // Info Modal
-    welcomeTitle: 'Bienvenido a la Solución de Interpretación del Municipio de Kalundborg',
+    welcomeTitle: 'Bienvenido a la Solución de Interpretación del Municipio de Vejle',
     welcomeMessage: 'Esta solución te ayuda a comunicarte en danés y en tu idioma elegido.',
     howItWorks: 'Así es como funciona:',
     step1: '1. Escribe o habla tu mensaje',
@@ -323,7 +323,7 @@ export const translations: Record<string, Translation> = {
     stopRecording: 'Stoppa inspelning',
 
     // Info Modal
-    welcomeTitle: 'Välkommen till Kalundborg Kommuns Tolkningslösning',
+    welcomeTitle: 'Välkommen till Vejle Kommuns Tolkningslösning',
     welcomeMessage: 'Denna lösning hjälper dig att kommunicera på danska och ditt valda språk.',
     howItWorks: 'Så här fungerar det:',
     step1: '1. Skriv eller säg ditt meddelande',
@@ -425,7 +425,7 @@ export const translations: Record<string, Translation> = {
     stopRecording: 'Parar gravação',
 
     // Info Modal
-    welcomeTitle: 'Bem-vindo à Solução de Interpretação do Município de Kalundborg',
+    welcomeTitle: 'Bem-vindo à Solução de Interpretação do Município de Vejle',
     welcomeMessage: 'Esta solução ajuda você a se comunicar em dinamarquês e no seu idioma escolhido.',
     howItWorks: 'Como funciona:',
     step1: '1. Escreva ou fale sua mensagem',
@@ -527,7 +527,7 @@ export const translations: Record<string, Translation> = {
     stopRecording: 'Kaydı durdur',
 
     // Info Modal
-    welcomeTitle: 'Kalundborg Belediyesi Tercüme Çözümüne Hoş Geldiniz',
+    welcomeTitle: 'Vejle Belediyesi Tercüme Çözümüne Hoş Geldiniz',
     welcomeMessage: 'Bu çözüm Danca ve seçtiğiniz dilde iletişim kurmanıza yardımcı olur.',
     howItWorks: 'Nasıl çalışır:',
     step1: '1. Mesajınızı yazın veya konuşun',
@@ -595,7 +595,7 @@ export const translations: Record<string, Translation> = {
     stopRecording: 'Ferma registrazione',
 
     // Info Modal
-    welcomeTitle: 'Benvenuto alla Soluzione di Interpretazione del Comune di Kalundborg',
+    welcomeTitle: 'Benvenuto alla Soluzione di Interpretazione del Comune di Vejle',
     welcomeMessage: 'Questa soluzione ti aiuta a comunicare in danese e nella lingua che hai scelto.',
     howItWorks: 'Come funziona:',
     step1: '1. Scrivi o pronuncia il tuo messaggio',
@@ -663,7 +663,7 @@ export const translations: Record<string, Translation> = {
     stopRecording: 'Dừng ghi âm',
 
     // Info Modal
-    welcomeTitle: 'Chào mừng bạn đến Giải pháp Thông dịch của Thành phố Kalundborg',
+    welcomeTitle: 'Chào mừng bạn đến Giải pháp Thông dịch của Thành phố Vejle',
     welcomeMessage: 'Giải pháp này giúp bạn giao tiếp bằng tiếng Đan Mạch và ngôn ngữ bạn đã chọn.',
     howItWorks: 'Cách hoạt động:',
     step1: '1. Viết hoặc nói tin nhắn của bạn',
@@ -697,7 +697,7 @@ export const translations: Record<string, Translation> = {
     stopRecording: 'Zatrzymaj nagrywanie',
 
     // Info Modal
-    welcomeTitle: 'Witamy w Rozwiązaniu Tłumaczeniowym Gminy Kalundborg',
+    welcomeTitle: 'Witamy w Rozwiązaniu Tłumaczeniowym Gminy Vejle',
     welcomeMessage: 'To rozwiązanie pomaga w komunikacji po duńsku i w wybranym przez Ciebie języku.',
     howItWorks: 'Jak to działa:',
     step1: '1. Napisz lub powiedz swoją wiadomość',
@@ -731,7 +731,7 @@ export const translations: Record<string, Translation> = {
     stopRecording: 'Stopp opptak',
 
     // Info Modal
-    welcomeTitle: 'Velkommen til Kalundborg Kommunes Tolkeløsning',
+    welcomeTitle: 'Velkommen til Vejle Kommunes Tolkeløsning',
     welcomeMessage: 'Denne løsningen hjelper deg å kommunisere på dansk og ditt valgte språk.',
     howItWorks: 'Slik fungerer det:',
     step1: '1. Skriv eller si meldingen din',
@@ -765,7 +765,7 @@ export const translations: Record<string, Translation> = {
     stopRecording: 'Opname stoppen',
 
     // Info Modal
-    welcomeTitle: 'Welkom bij de Vertaaloplossing van de Gemeente Kalundborg',
+    welcomeTitle: 'Welkom bij de Vertaaloplossing van de Gemeente Vejle',
     welcomeMessage: 'Deze oplossing helpt je communiceren in het Deens en je gekozen taal.',
     howItWorks: 'Zo werkt het:',
     step1: '1. Schrijf of spreek je bericht',
@@ -799,7 +799,7 @@ export const translations: Record<string, Translation> = {
     stopRecording: 'Opriți înregistrarea',
 
     // Info Modal
-    welcomeTitle: 'Bine ați venit la Soluția de Interpretare a Municipalității Kalundborg',
+    welcomeTitle: 'Bine ați venit la Soluția de Interpretare a Municipalității Vejle',
     welcomeMessage: 'Această soluție vă ajută să comunicați în daneză și în limba aleasă.',
     howItWorks: 'Cum funcționează:',
     step1: '1. Scrieți sau spuneți mesajul',
@@ -833,7 +833,7 @@ export const translations: Record<string, Translation> = {
     stopRecording: 'Sustabdyti įrašymą',
 
     // Info Modal
-    welcomeTitle: 'Sveiki atvykę į Kalundborgo savivaldybės vertimo sprendimą',
+    welcomeTitle: 'Sveiki atvykę į Vejle savivaldybės vertimo sprendimą',
     welcomeMessage: 'Šis sprendimas padeda jums bendrauti danų ir jūsų pasirinkta kalba.',
     howItWorks: 'Kaip tai veikia:',
     step1: '1. Parašykite arba pasakykite savo žinutę',
@@ -901,7 +901,7 @@ export const translations: Record<string, Translation> = {
     stopRecording: 'Felvétel leállítása',
 
     // Info Modal
-    welcomeTitle: 'Üdvözöljük a Kalundborg Önkormányzat Tolmácsolási Megoldásában',
+    welcomeTitle: 'Üdvözöljük a Vejle Önkormányzat Tolmácsolási Megoldásában',
     welcomeMessage: 'Ez a megoldás segít dánul és a választott nyelvén kommunikálni.',
     howItWorks: 'Hogyan működik:',
     step1: '1. Írja le vagy mondja el az üzenetét',
@@ -935,7 +935,7 @@ export const translations: Record<string, Translation> = {
     stopRecording: 'Zastavit nahrávání',
 
     // Info Modal
-    welcomeTitle: 'Vítejte v překladatelském řešení obce Kalundborg',
+    welcomeTitle: 'Vítejte v překladatelském řešení obce Vejle',
     welcomeMessage: 'Toto řešení vám pomáhá komunikovat v dánštině a ve vámi zvoleném jazyce.',
     howItWorks: 'Jak to funguje:',
     step1: '1. Napište nebo řekněte svou zprávu',
@@ -969,7 +969,7 @@ export const translations: Record<string, Translation> = {
     stopRecording: 'Zaustavi snimanje',
 
     // Info Modal
-    welcomeTitle: 'Dobrodošli u prevoditeljsko rješenje općine Kalundborg',
+    welcomeTitle: 'Dobrodošli u prevoditeljsko rješenje općine Vejle',
     welcomeMessage: 'Ovo rješenje vam pomaže komunicirati na danskom i vašem odabranom jeziku.',
     howItWorks: 'Kako funkcionira:',
     step1: '1. Napišite ili recite svoju poruku',
@@ -1139,7 +1139,7 @@ export const translations: Record<string, Translation> = {
     stopRecording: 'Ndalo regjistrimin',
 
     // Info Modal
-    welcomeTitle: 'Mirë se vini në Zgjidhjen e Përkthimit të Komunës së Kalundborg',
+    welcomeTitle: 'Mirë se vini në Zgjidhjen e Përkthimit të Komunës së Vejle',
     welcomeMessage: 'Kjo zgjidhje ju ndihmon të komunikoni në danisht dhe në gjuhën tuaj të zgjedhur.',
     howItWorks: 'Si funksionon:',
     step1: '1. Shkruani ose thoni mesazhin tuaj',
@@ -1173,7 +1173,7 @@ export const translations: Record<string, Translation> = {
     stopRecording: 'Aturar gravació',
 
     // Info Modal
-    welcomeTitle: 'Benvinguts a la Solució d\'Interpretació del Municipi de Kalundborg',
+    welcomeTitle: 'Benvinguts a la Solució d\'Interpretació del Municipi de Vejle',
     welcomeMessage: 'Aquesta solució us ajuda a comunicar-vos en danès i en l\'idioma escollit.',
     howItWorks: 'Com funciona:',
     step1: '1. Escriviu o digueu el vostre missatge',
