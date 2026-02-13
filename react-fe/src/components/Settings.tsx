@@ -1680,7 +1680,7 @@ function SettingsUI({
     <div>
       {/* search + filter */}
       <div className="flex items-center gap-4 bg-[#bc4d30] p-6">
-        <img src={logo} alt="Kalundborg Kommune logo" width={90} />
+        <img src={logo} alt="Vejle Kommune logo" width={90} />
         <input
           key="language-search"
           ref={searchInputRef}
