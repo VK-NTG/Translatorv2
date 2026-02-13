@@ -3,10 +3,10 @@
 
 # === CONFIG ===
 # Azure deployment settings
-ACR_NAME             := kkainonprodacr
-AZURE_WEBAPP_NAME    := kk-translator
-AZURE_RESOURCE_GROUP := KK-AI-NONPROD-ChatBot
-ACR_LOGIN_SERVER     := $(ACR_NAME).azurecr.io
+ACR_NAME             ?= kkainonprodacr
+AZURE_WEBAPP_NAME    ?= kk-translator
+AZURE_RESOURCE_GROUP ?= KK-AI-NONPROD-ChatBot
+ACR_LOGIN_SERVER     ?= $(ACR_NAME).azurecr.io
 
 # Load environment variables from .env
 ifneq ("$(wildcard .env)","")
