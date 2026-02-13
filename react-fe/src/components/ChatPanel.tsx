@@ -275,7 +275,7 @@ const ChatPanel: React.FC<ChatPanelProps> = ({
         >
           <div className="w-[110px] sm:w-[140px] md:w-[90px] lg:w-[160px] text-left">
             {showLogo && (
-              <img src={logo} alt="Kalundborg Kommune logo" width={160} />
+              <img src={logo} alt="Vejle Kommune logo" width={160} />
             )}
           </div>
           <div>
