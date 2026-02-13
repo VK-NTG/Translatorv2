@@ -135,7 +135,7 @@ const LanguageModal: React.FC<Props> = ({ onSessionCreated }) => {
   // Get language-specific welcome message
   const getLanguageSpecificContent = (language: Language) => {
     return languageTranslations[language.code as keyof typeof languageTranslations] || {
-      welcome: 'Welcome to Kalundborg Municipality\'s Interpretation Solution',
+      welcome: 'Welcome to Vejle Municipality\'s Interpretation Solution',
       description: 'This solution helps you communicate in Danish and your chosen language.'
     }
   }
@@ -299,7 +299,7 @@ const LanguageModal: React.FC<Props> = ({ onSessionCreated }) => {
               <>
                 {/* Initial welcome state - Danish content first */}
                 <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">
-                  Velkommen til Kalundborg Kommunes Tolkeløsning
+                  Velkommen til Vejle Kommunes Tolkeløsning
                 </h2>
 
                 <p className="text-gray-700 dark:text-gray-300 mb-6">
@@ -347,7 +347,7 @@ const LanguageModal: React.FC<Props> = ({ onSessionCreated }) => {
               <>
                 {/* Language selected state - Danish content first */}
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                  Velkommen til Kalundborg Kommunes Tolkeløsning
+                  Velkommen til Vejle Kommunes Tolkeløsning
                 </h2>
 
                 <p className="text-gray-700 dark:text-gray-300 mb-6">
