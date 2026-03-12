@@ -41,5 +41,5 @@ def init_db(app):
     migrate.init_app(app, db)
 
     # 👇 DEV convenience: create tables if they don't exist
-    # with app.app_context():
-    #    db.create_all()
+    with app.app_context():
+    db.create_all()
